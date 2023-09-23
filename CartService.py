@@ -27,7 +27,7 @@ def get_cart(user_id):
 @app.route('/cart/<int:user_id>/add/<int:product_id>', methods=['POST'])
 def add_product(user_id, product_id):
     #get the product
-    response = requests.get(f'http://127.0.0.1:5000/products/{product_id}')
+    response = requests.get(f'https://cartservice-gejx.onrender.com/products/{product_id}')
     data = response.json()
 
     ##check it needs to be updated
