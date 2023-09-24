@@ -44,7 +44,7 @@ def add_product(user_id, product_id):
     
     quantity_data = datajson['rquantity']
     #get the product from ProductService
-    response = requests.get(f'https://productservice-guh0.onrender.com/{product_id}')
+    response = requests.get(f'https://productservice-guh0.onrender.com/products/{product_id}')
     data = response.json()
 
     #Check if objects already exists in cart
